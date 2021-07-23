@@ -1,0 +1,49 @@
+<!doctype html>
+<head>
+    <title>Task 4 - Dynamic form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <form id="simple_form" name="simple_form">
+        <div class="left-text">Street Name</div>
+        <input class="right-input" type="text" name="street" />
+    
+        <div class="left-text">Suburb</div>
+        <input class="right-input" type="text" name="suburb" />
+
+        <div class="left-text">Postcode</div>
+        <input class="right-input" type="text" name="postcode" />
+
+        <div class="left-text">Date of birth</div>
+        <input class="right-input" type="text" name="dob" />
+
+        <div class="left-text">Building Type</div>
+        <select class="right-input" name="type"">
+            <option value="Apartment">Apartment</option>
+            <option value="House">House</option>
+        </select>
+
+        <div class="left-text">Features</div>
+        <div class="features">
+            <input type="checkbox" id="heating" name="check" value="Heating">
+            <label for="heating">Heating</label>
+            <br />
+            <input type="checkbox" id="airconditioning" name="check" value="AirConditioning">
+            <label for="airconditioning">AirConditioning</label>
+            <br />
+            <input type="checkbox" id="pool" name="check" value="Pool">
+            <label for="pool">Pool</label>
+            <br />
+            <input type="checkbox" id="sandpit" name="check" value="Sandpit">
+            <label for="sandpit">Sandpit</label>
+            <br />
+            <input type="button" id="select-button"  value="Select All" />
+        </div>
+    </form>
+    <br /><br />
+        <input id="reset" type="reset" value="Reset" />
+        <br /><br />
+        <textarea id="output" class="summary"></textarea>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

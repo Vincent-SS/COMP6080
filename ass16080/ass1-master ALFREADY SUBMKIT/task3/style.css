@@ -1,0 +1,225 @@
+body {
+    font-family: Arial;
+    line-height: 3.5rem;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    padding: 0 22rem 0 22rem;
+    color: #000334;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 35pt;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 130px;
+    grid-column-gap: 20px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 16pt;
+}
+
+.image-text:hover {
+    opacity: 0.5;
+}
+
+.text {
+    margin-top: 30px;
+    line-height: 3rem;;
+}
+
+strong {
+    font-size: 21pt;
+}
+
+img {
+    height: 130px;
+}
+
+footer {
+    background-color: #fffd86;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin: 8rem 20rem 0rem 20rem;
+    display: grid;
+    grid-template-columns: 3.8fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "text app-store google-play";
+    column-gap: 5px;
+    box-sizing: border-box;
+    background-size: auto 100%;
+}
+
+.bottom-title {
+    margin-top: 20px;
+    grid-area: header;
+    font-size: 35pt;
+    font-weight: bold;
+}
+
+b {
+    font-size: 50pt;
+}
+
+.bottom-body {
+    margin-top: 14px;
+    grid-area: text;
+    font-size: 20pt;
+    line-height: 2.5rem;
+}
+
+span {
+    background-color: #8251f6;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span:hover {
+    opacity: 0.7;
+}
+
+.download-icons {
+    display: inherit;
+}
+
+.app-store {
+    width: 192px;
+    height: 56px;
+    grid-area: app-store;
+    cursor: pointer;
+}
+
+.google-play {
+    width: 192px;
+    height: 56px;
+    grid-area: google-play;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+    top: 10px;
+}
+
+@media (max-width: 1690px) {
+    .download-icons {
+        display: flex;
+        flex-direction: column;
+        grid-area: google-play;
+        position: relative;
+        right: 80px;
+    }
+    .google-play {
+        position: initial;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 1390px) {
+    h1 {
+        padding: 0 5rem 0 5rem;
+    }
+
+    .container {
+        grid-row-gap: 130px;
+        margin-top: 80px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 16pt;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "header"
+            "text"
+            "app-store"
+            "google-play";
+        row-gap: 5px;
+        text-align: center;
+    }
+
+    .download-icons {
+        display: initial;
+        position: initial;
+    }
+}
+
+@media (max-width: 1260px) {
+    footer {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (max-width: 570px) {
+    body {
+        line-height: 2.5rem;
+    }
+
+    h1 {
+        padding: 0 0.7rem 0 0.7rem;
+        font-size: 25pt;
+    }
+
+    .container {
+        grid-row-gap: 130px;
+        font-size: 15pt;
+    }
+
+    .text {
+        line-height: 2.25rem;;
+    }
+
+    strong {
+        font-size: 18pt;
+    }
+    
+    footer {
+        line-height: 1.8rem;
+        padding-top: 70px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .bottom-title {
+        margin-top: -20px;
+    }
+
+    .bottom-body {
+        font-size: 19pt;
+    }
+
+    b {
+        font-size: 40pt;
+    }
+
+    .download-icons {
+        margin-top: 5px;
+    }
+
+    .google-play {
+        margin-top: 13px;
+    }
+}

@@ -1,0 +1,52 @@
+body {
+    font-size: 25pt;
+    width: 600px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+    padding: 5px;
+    border: 3px solid black;
+}
+
+.left-text{
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.right-input {
+    border: 1px solid black;
+}
+
+input {
+    font-size: 18pt;
+}
+
+input[type=button], input[type=reset]{
+    background-color: lightgrey;
+    color: black;
+    font-size: 25pt;
+    padding: 5px 10px;
+}
+
+.features {
+    font-size: 25pt;
+    display: gird;
+    grid-template-columns: 2fr 3fr;
+}
+
+.summary {
+    border: 2px solid black;
+    width: 600px;
+    height: 300px;
+}
+
+textarea {
+    font-size: 25pt;
+}
+
+select {
+    font-size: 25pt;
+}

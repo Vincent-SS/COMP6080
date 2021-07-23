@@ -1,0 +1,70 @@
+body {
+    width: 420px;
+    height: 699px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.color-background {
+    width: 420px;
+    height: 699px;
+    background: repeating-linear-gradient(to right, #091c2c 0px 35px, #0c263d 35px 70px);
+}
+
+.top-purple {
+    position: absolute;
+    top: 420px;
+    left: 175px;
+}
+
+.purple-head {
+    width: 33px;
+    height: 33px;
+    margin-left: 1px;
+    margin-right: 1px;
+    background-color: #a587f7;
+}
+
+.white-triangle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 1px;
+    left: 1px;
+    background-color: #ede7fd;
+    background: linear-gradient(to bottom right, #ede7fd 0px 8px, transparent 8px);
+}
+
+.purple-base {
+    position: relative;
+    top: 2px;
+    display: flex;
+    right: 35px;
+}
+
+.bottom-purple {
+    position: absolute;
+    top: 630px;
+    left: 315px;
+}
+
+.orange-area {
+    position: absolute;
+    top: 630px;
+    left: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70px;
+    height: 70px;
+}
+
+.orange-square {
+    width: 33px;
+    height: 33px;
+    margin-left: 1px;
+    margin-right: 1px;
+    background-color: #d5535d;
+}
